@@ -7,12 +7,17 @@ body{
 	font-family: 'Lato', sans-serif;
 	background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
 }
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1600px;
+}
 
 .header-box{
 	margin-top: 50px;
-	margin-left: 140px;
 	max-width: 1248px;
 	height: 754px;
+	margin-left: 140px;
 }
 
 .top-pannel{
@@ -73,6 +78,7 @@ body{
 	width: 645px;
 	height: 464px;
 	position: absolute;
+	z-index: 1;
 }
 #head-btn{
 	width: 170px;
@@ -89,9 +95,10 @@ body{
 }
 
 .himage{
-	margin-left: 285px;
 	margin-top: 100px;
-	max-width: 460px;
+	position: absolute;
+	right: 0px;
+
 }
 .header-title{
 	font-family: Helvetica;
@@ -128,8 +135,8 @@ body{
 	background: rgba(240, 99, 184, 0.15);
 	border-radius: 50px;
 	display: flex;
-	margin-left: 140px;
 	margin-top: 100px;
+	margin-left: 140px;
 }
 
 
@@ -261,7 +268,7 @@ margin-top: 150px;
 	margin-left: 93px;
 	margin-top: 88px;
 	display: flex;
-	box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+	box-shadow: 0px 20px 0px rgba(70, 100, 200, 0.3);
 }
 .white-text{
 	padding-top: 80px;
@@ -317,6 +324,18 @@ padding-top: 19px;
 .white-foto{
 	margin-left: 103px;
 	margin-top: 60px;
+}
+
+.arrows{
+	max-width: 949px;
+	margin-left: 93px;
+	padding-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.arrows-box{
+	padding: 0px 5px;
 }
 
 /*======FOOTER==================*/
@@ -476,4 +495,25 @@ text-decoration: none;
 	position: absolute;
 	bottom: 10px;
 	right: 0px;
+}
+
+.icons-flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+#f:hover{
+	background-color: blue;
+}	
+#t:hover{
+	background-color: dodgerblue;
+}
+
+#i:hover{
+	background-color: crimson;
+}
+
+button{
+	outline: none;
+	cursor: pointer;
 }
